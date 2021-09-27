@@ -11,10 +11,18 @@
 </head>
 <body>
     <div id="root">
-        <ul>
-            <!-- stampo una mail  di un array di mails -->
-            <li v-for="mail in arrayMails">{{mail}}</li>
-        </ul>
+        <div class="container">
+            <h2>Esercizio : Vue Email List </h2>
+            <hr>
+            <section >
+                <ul id="lista-mail">
+                    <!-- stampo una mail  di un array di mails -->
+                    <span class="square">
+                        <li v-for="mail in arrayMails">{{mail}}</li>
+                    </span>
+                </ul>
+            </section>
+        </div>
     </div>
 
 
