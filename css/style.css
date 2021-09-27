@@ -22,11 +22,10 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
 
 
 }
-
 
 #lista-mail, h2 {
     list-style: none;
@@ -34,7 +33,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     font: bold;
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 50px ;
 }
 
