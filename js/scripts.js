@@ -8,19 +8,21 @@
 const app = new Vue({
     el: '#root',
     data: {
-        "success" :	true,
-        "response":	"dewayne54@hansen.com"
+
+        arrayMails : [],
+
     },
 
-    methods: {
-        
-    
-    },
+
     mounted(){
-        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((response) => {
-            this.result.data = response.data.response;
+        for (var i = 0; i <= 10; i++) {
+            axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+                .then((pluto) => {
+                    this.arrayMails.push(pluto.data.response);
+                    console.log(pluto.data.response);
+                });
+
         }
-        )
+        
     }
-})
+});
